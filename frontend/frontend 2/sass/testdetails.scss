@@ -1,0 +1,241 @@
+// Variáveis
+$primary-color: #04345A; 
+$secondary-color: #FF9600; 
+$gradient-bg: linear-gradient(180deg, #004B87 0%, #04345A 100%);
+$img-gradient-bg: 
+    linear-gradient(60deg, #04345A 50%, transparent 50%), 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%), 
+    url('../assets/image.png') center center / cover no-repeat;
+$text-color: #333;
+$background-color: #F5F5F5;
+$white: #ffffff;
+$gray: #858585;
+$soft-black: #282829;
+$icon-grey: #B6B6B6;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", system-ui;
+    background-color: $white;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    background-color: $background-color;
+    height: 932px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header {
+    background: url('../assets/image.jpg') center center / cover no-repeat;;
+    color: $white;
+    height: 90px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 27px 27px;
+    margin-bottom: 19px;
+
+    .back-arrow {
+        position: absolute;
+        left: 20px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .textheader {
+        display: flex;
+    }
+
+    .textmain {
+        flex-direction: row;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        top: 43px;
+    }
+
+    .rating {
+        margin-top: 0;
+        
+        #star-icon {
+            font-size: 17px;
+            color: #FFAF02;
+            cursor: pointer;
+        }
+
+        #star-icon-none {
+            font-size: 17px;
+            color: #BABABA;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        margin-top: 5px;
+        font-size: 14px;
+
+    }
+}
+
+.creator-info {
+    background-color: $white;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 369px;
+    height: auto;
+    min-height: 56px;
+    display: flex;
+    align-self: center;
+    margin-bottom: 20px;
+
+    p {
+        color: $gray;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+
+        strong {
+            color: $primary-color;
+            font-weight: 700;
+        }
+    }
+}
+
+.topics {
+    background-color: $white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 369px;
+    height: auto;
+    min-height: 208px;
+    gap: 10px;
+    margin: 0 30px 20px;
+
+    h2 {
+        font-size: 22px;
+        line-height: 22px;
+        color: $primary-color;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 17.16px;
+        font-weight: 400;
+        color: $gray;
+    }
+}
+
+.performance {
+    display: flex;
+    flex-direction: column;
+    padding: 0 31px 102px;
+
+    .performance-title {
+        h2 {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            color: $primary-color;
+            margin-bottom: 20px;
+        }
+    }
+
+    .performance-itens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .performance-item {
+        background-color: $white;
+        padding: 15px;
+        gap: 5px;
+        border-radius: 10px;
+        width: calc(50% - 10px);
+        height: 109px;
+
+        i {
+            font-size: 24px;
+            color: $white;
+            margin-bottom: 5px;
+        }
+        
+        #trending_up {
+            background-color: #1D3839;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        #school {
+            background-color: #1B7AE9;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        #person {
+            background-color: #05C829;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        #star {
+            background-color: #7f31a3;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 20px;
+        }
+        
+
+        p {
+            font-size: 12px;
+            color: $gray;
+            font-weight: 500;
+            line-height: 20px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: $soft-black;
+            margin-top: 5px;
+            font-weight: 700;
+        }
+    }
+}
+
+.start-button {
+    width: 100%;
+    max-width: 376.55px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: $secondary-color;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    margin: 0 auto 41px;
+}
